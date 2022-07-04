@@ -1,0 +1,55 @@
+.towers_kremlin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(145deg, rgb(235, 235, 235) 50%,rgb(220, 220, 220) 50%);
+}
+.towers_kremlin_content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_tower {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.towers {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.tower {
+    width: 250px;
+    height: 340px;
+    margin: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 4px 3px 10px -3px rgb(65, 65, 65);
+    border-radius: 4px;
+    background-color: white;
+}
+.tower img {
+    width: 250px;
+    height: 300px;
+    border-radius: 4px 4px 0 0;
+}
+.tower a {
+    font-family: sans-serif;
+    color: rgb(50, 50, 50);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.tower a:hover {
+    color: rgb(110, 40, 40);
+}

@@ -1,0 +1,69 @@
+.footer-main-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(35deg,rgb(222, 222, 222) 50%,rgb(190, 190, 190) 50%);
+}
+.footer_content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_content h2 {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    font-family: sans-serif;
+    color: gray;
+    font-size: .8rem;
+}
+.footer_item_list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.item {
+    font-family: sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    text-transform: uppercase;
+}
+.item:hover {
+    color: rgb(110, 40, 40);
+}
+.box_1 {
+    width: 100px;
+    height: 80px;
+    background-image: url(../../img/img-icon/Gerb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+}
+.box_2 {
+    width: 100px;
+    height: 80px;
+    background-image: url(../../img/img-icon/Nacproject.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+}
+.box_3 {
+    width: 800px;
+    height: 100px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.box_3 p {
+    font-family: sans-serif;
+    font-size: .9rem;
+}

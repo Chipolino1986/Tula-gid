@@ -1,0 +1,123 @@
+.section_3 {
+    width: 100%;
+    height: 650px;
+    background-image: url(../../img/kremlin/Tula-kremlin_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+.section_blur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+.slider_wrapper {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px 0;
+    max-width: 1300px;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+.slider_container {
+    width: 1100px;
+    height: 550px;
+    overflow: hidden;
+    background: pink;
+    margin: 0 auto;
+    outline: 2px solid rgb(255, 255, 255);
+    box-shadow: 20px 20px 15px -15px rgba(0, 0, 0, 0.700);
+}
+.slider_track {
+    display: flex;
+    background: gold;
+    transition: .7s;
+}
+.slider_item {
+    height: 600px;
+}
+.slider_item:nth-child(1) {
+    background: url(../../img/kremlin/kremlin-large-5-night.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(2) {
+    background: url(../../img/kremlin/kremlin-large-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(3) {
+    background: url(../../img/kremlin/kremlin-large-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(4) {
+    background: url(../../img/kremlin/kremlin-large-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(5) {
+    background: url(../../img/kremlin/kremlin-large-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(6) {
+    background: url(../../img/kremlin/Башня_на_погребу_Тульский_кремль-large.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(7) {
+    background: url(../../img/kremlin/kremlin-large-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(8) {
+    background: url(../../img/kremlin/kremlin-firework-night.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(9) {
+    background: url(../../img/kremlin/kremlin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(10) {
+    background: url(../../img/kremlin/kremlin-winter.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider_buttons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.slider_buttons i {
+    font-size: 2.2rem;
+}
+.slider_buttons button {
+    width: 70px;
+    height: 50px;
+    transition: .6s;
+    background: none;
+    color: white;
+    transition: all .1s ease;
+    /* border: 1px solid white; */
+}
+.slider_buttons button:hover {
+    transform: scale(1.3);
+}
