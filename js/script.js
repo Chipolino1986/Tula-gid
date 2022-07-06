@@ -1,8 +1,8 @@
 'use strict'
 
 let position = 0;
-const slidesToShow = 1;
-const slidesToScroll = 1;
+const slidesToShow = 3;
+const slidesToScroll = 3;
 const container = document.querySelector('.slider_container');
 const track = document.querySelector('.slider_track');
 const btnPrev = document.querySelector('.btn_prev');

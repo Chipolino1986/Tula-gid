@@ -20,13 +20,13 @@
     display: flex;
     align-items: center;
     margin: 50px 0 50px 0;
-    max-width: 1300px;
+    max-width: 1100px;
     width: 100%;
     /* border: 1px solid white; */
 }
 .slider_container {
-    width: 1100px;
-    height: 550px;
+    max-width: 1000px;
+    width: 100%;
     overflow: hidden;
     background: pink;
     margin: 0 auto;
@@ -39,7 +39,7 @@
     transition: .7s;
 }
 .slider_item {
-    height: 600px;
+    height: 470px;
 }
 .slider_item:nth-child(1) {
     background: url(../../img/kremlin/kremlin-large-5-night.jpg);
@@ -116,7 +116,7 @@
     background: none;
     color: white;
     transition: all .1s ease;
-    /* border: 1px solid white; */
+    /* border: 1px solid rgb(255, 255, 255); */
 }
 .slider_buttons button:hover {
     transform: scale(1.3);
