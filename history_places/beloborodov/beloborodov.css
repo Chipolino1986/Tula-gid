@@ -1,0 +1,262 @@
+.section-1_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-1_wrapper h1 {
+    font-size: 2.5rem;
+    color: rgb(110, 40, 40);
+    padding: 20px 0;
+}
+.section-1_wrapper h2 {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(75, 75, 75);
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 750px;
+    padding-bottom: 20px;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+}
+.container p {
+    font-family: sans-serif;
+}
+.container img {
+    max-width: 400px;
+    width: 100%;
+    min-height: 500px;
+    margin: 0 30px 5px 0;
+}
+p img {
+    float: left;
+}
+.description_box {
+    max-width: 700px;
+    width: 100%;
+    min-height: 500px;
+}
+.section-2_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(143.5deg,rgb(240, 240, 240)50%,rgb(230, 230, 230) 50%);
+}
+.container_section-2 {
+    max-width: 1200px;
+    width: 100%;
+}
+.container_section-2 img {
+    float: right;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    margin-left: 20px;
+}
+.container_section-2 p:first-child {
+    max-width: 800px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(110, 40, 40);
+    padding: 20px 0 40px 0;
+    margin: auto;
+}
+.container_section-2 p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+/* -------------------location----------------- */
+
+.location_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+.container_location {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.map_container {
+    max-width: 500px;
+    width: 100%;
+    min-height: 250px;
+    border: 1px solid rgb(181, 181, 181);
+    padding: 5px 5px 0 5px;
+    border-radius: 4px;
+}
+iframe {
+    max-width: 500px;
+    width: 100%;
+    min-height: 250px;
+}
+.description_container {
+    max-width: 600px;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+.description_container p:first-child {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.description_container p:last-child {
+    font-family: sans-serif;
+    color: rgb(64, 64, 64);
+    font-size: 1.1rem;
+}
+/* -----------------------------slider --------------------------*/
+.slider_bunin {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 750px;
+    width: 100%;
+}
+.slider_container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    /* background: pink; */
+    margin: 0 auto;
+}
+.slider_track {
+    display: flex;
+    /* background: gold; */
+    transition: .7s;
+}
+.slider_item {
+    height: 380px;
+    border: 10px solid transparent;
+}
+.slider_item:nth-child(1) {
+    background: url(../../img/Beloborodov/dom1.webp);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(2) {
+    background: url(../../img/Beloborodov/enter_museum.webp);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(3) {
+    background: url(../../img/Beloborodov/bit_dom1.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(4) {
+    background: url(../../img/Beloborodov/bit2-dom.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(5) {
+    background: url(../../img/Beloborodov/bit3.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(6) {
+    background: url(../../img/Beloborodov/IMG_6734.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_item:nth-child(7) {
+    background: url(../../img/Beloborodov/gormon.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.slider_buttons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.slider_buttons i {
+    font-size: 2rem;
+}
+.slider_buttons button {
+    width: 50px;
+    height: 40px;
+    transition: .6s;
+    background: none;
+    color: rgb(72, 72, 72);
+    transition: all .1s ease;
+}
+/* ---------------------popUp--------------- */
+
+.img_dom_bunin {
+    max-width: 500px;
+    max-height: 350px;
+    height: 100%;
+}
+.img_dom_bunin:hover {
+    cursor: pointer;
+}
+.pop_up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-45.5%) scale(0);
+    transition: all .4s ease;
+}
+.pop_up.active {
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0, 0, .7);
+}
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.pop_up_body {
+    margin: auto;
+    width: 750px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    position: relative;
+}
+.pop_up_body img {
+    width: 100%;
+    height: 500px;
+}
+.pop_up_close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
