@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(45deg,rgb(240, 240, 240)50%,rgb(230, 230, 230) 50%);
 }
 .section-1_wrapper h1 {
     font-size: 2.5rem;
@@ -47,7 +48,7 @@ p img {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: linear-gradient(143.5deg,rgb(240, 240, 240)50%,rgb(230, 230, 230) 50%);
+    background: linear-gradient(136.6deg,rgb(240, 240, 240)50%,rgb(230, 230, 230) 50%);
 }
 .container_section-2 {
     max-width: 1200px;
@@ -111,6 +112,7 @@ iframe {
     flex-direction: column;
     align-content: space-between;
     justify-content: center;
+    background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
 }
 .description_container p:first-child {
     font-size: 2rem;

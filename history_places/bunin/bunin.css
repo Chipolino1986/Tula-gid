@@ -112,6 +112,7 @@ iframe {
     flex-direction: column;
     align-content: space-between;
     justify-content: center;
+    background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
 }
 .description_container p:first-child {
     font-size: 2rem;

@@ -307,6 +307,7 @@ h5 {
     height: 100%;
     /* border: 1px solid black; */
     padding: 10px;
+    background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
 }
 .block-description h3, h4 {
     font-family: sans-serif;
