@@ -18,7 +18,7 @@
 }
 .conteiner {
     position: relative;
-    padding-bottom: 30.25%;
+    padding-bottom: 43.25%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -49,6 +49,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
 }
 h5 {
     text-align: center;
@@ -78,7 +79,7 @@ h5 {
 /* -----------------------------slider --------------------------*/
 .slider_main_wrapper {
     width: 100%;
-    background-color: beige;
+    background-color: rgba(255, 228, 196, 0.5);
     display: flex;
     justify-content: center;
     padding: 40px 0;
@@ -225,7 +226,6 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    /* border: 1px solid black; */
     padding: 10px;
 }
 .text_history p:first-child {
@@ -256,7 +256,6 @@ h5 {
 .history_content {
     max-width: 1200px;
     width: 100%;
-    /* border: 1px solid black; */
     margin: 20px 0;
     display: flex;
     justify-content: center;
@@ -266,7 +265,7 @@ h5 {
 /*-------------------- navigation----------------- */
 .navigation_main_wrapper {
     width: 100%;
-    background-color: beige;
+    background-color: rgba(255, 228, 196, 0.5);
     padding: 40px 0 10px 0;
 }
 .navigation_wrapper {
@@ -287,9 +286,8 @@ h5 {
     width: 100%;
     min-height: 300px;
     height: 100%;
-    border: 1px solid rgb(190, 190, 190);
     border-radius: 6px;
-    padding: 5px;
+    box-shadow: 3px 3px 10px -3px rgba(70, 70, 70, 0.5);
 }
 .block-map iframe {
     max-width: 600px;
@@ -303,11 +301,12 @@ h5 {
     justify-content: center;
     max-width: 500px;
     width: 100%;
-    min-height: 350px;
+    min-height: 300px;
     height: 100%;
-    /* border: 1px solid black; */
-    padding: 10px;
     background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
+    padding: 0 20px;
+    box-shadow: 3px 3px 10px -3px rgba(70, 70, 70, 0.5);
+
 }
 .block-description h3, h4 {
     font-family: sans-serif;

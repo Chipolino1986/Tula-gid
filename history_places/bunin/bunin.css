@@ -55,6 +55,7 @@ p img {
 .container_section-2 {
     max-width: 1200px;
     width: 100%;
+    padding: 0 0 25px 0;
 }
 .container_section-2 img {
     float: right;
@@ -95,7 +96,6 @@ p img {
     max-width: 500px;
     width: 100%;
     min-height: 250px;
-    border: 1px solid rgb(181, 181, 181);
     padding: 5px 5px 0 5px;
     border-radius: 4px;
 }
@@ -113,6 +113,7 @@ iframe {
     align-content: space-between;
     justify-content: center;
     background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
+    padding: 0 20px;
 }
 .description_container p:first-child {
     font-size: 2rem;

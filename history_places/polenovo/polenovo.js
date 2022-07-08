@@ -44,46 +44,35 @@ checkBtns();
 
 // -------------------------------------------------------------------------
 
-const openPopUp = document.getElementById('open_pop_up');
-const openPopUp1 = document.getElementById('open_pop_up1');
-const openPopUp2 = document.getElementById('open_pop_up2');
+const popUpContainers = document.querySelectorAll('.img_box_polenovo');
 
-const closePopUp = document.getElementById('pop_up_close');
-const closePopUp1 = document.getElementById('pop_up_close1');
-const closePopUp2 = document.getElementById('pop_up_close2');
+popUpContainers.forEach(container => {
+    const btnImgOpen = container.querySelector('.img_polenovo_1');
+    const popUp = container.querySelector('.pop_up');
+    const popUpContainer = popUp.querySelector('.pop_up_container');
+    const popUpClose = popUp.querySelector('.pop_up_close');
+    const withoutContainer = popUp.dataset.withoutContainer;
+    const withoutCross = popUp.dataset.withoutCross;
 
-const popUp = document.getElementById('pop_up');
-const popUp1 = document.getElementById('pop_up1');
-const popUp2 = document.getElementById('pop_up2');
+    btnImgOpen.addEventListener('click', function(e) {
+        e.preventDefault();
+        popUp.classList.add('active');
+    })
 
-const popUpContainer = document.getElementById('pop_up_container');
-const popUpContainer1 = document.getElementById('pop_up_container1');
-const popUpContainer2 = document.getElementById('pop_up_container2');
-
-// ---------------------------------------------------
-openPopUp.addEventListener('click', function(e) {
-    e.preventDefault();
-    popUp.classList.add('active');
+    if(!withoutContainer) {
+        popUpContainer.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (e.target === popUpContainer) {
+                popUp.classList.remove('active');
+            }
+        })
+    }
+    if(!withoutCross) {
+        popUpClose.addEventListener('click', function(e) {
+            e.preventDefault();
+            popUp.classList.remove('active');
+        })
+    } else {
+        popUpClose.style.display = 'none';
+    }
 })
-openPopUp1.addEventListener('click', function(e) {
-    e.preventDefault();
-    popUp1.classList.add('active');
-})
-openPopUp2.addEventListener('click', function(e) {
-    e.preventDefault();
-    popUp2.classList.add('active');
-})
-// ---------------------------------------------------
-closePopUp.addEventListener('click', function (e) {
-    e.preventDefault();
-    popUp.classList.remove('active');
-})
-closePopUp1.addEventListener('click', function (e) {
-    e.preventDefault();
-    popUp1.classList.remove('active');
-})
-closePopUp2.addEventListener('click', function (e) {
-    e.preventDefault();
-    popUp2.classList.remove('active');
-})
-// ---------------------------------------------------

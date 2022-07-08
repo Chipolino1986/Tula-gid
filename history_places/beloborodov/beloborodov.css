@@ -11,10 +11,9 @@
     padding: 20px 0;
 }
 .section-1_wrapper h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: sans-serif;
-    color: rgb(75, 75, 75);
-    text-transform: uppercase;
+    color: rgb(70, 70, 70);
     text-align: center;
     max-width: 750px;
     padding-bottom: 20px;
@@ -49,6 +48,7 @@ p img {
     display: flex;
     justify-content: center;
     background: linear-gradient(136.6deg,rgb(240, 240, 240)50%,rgb(230, 230, 230) 50%);
+    padding-bottom: 30px;
 }
 .container_section-2 {
     max-width: 1200px;
@@ -81,7 +81,7 @@ p img {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: beige;
+    background-color: rgba(255, 228, 196, 0.5);
 }
 .container_location {
     max-width: 1200px;
@@ -95,9 +95,9 @@ p img {
     max-width: 500px;
     width: 100%;
     min-height: 250px;
-    border: 1px solid rgb(181, 181, 181);
     padding: 5px 5px 0 5px;
     border-radius: 4px;
+    box-shadow: 3px 3px 10px -3px rgba(0, 0, 0, 0.3);
 }
 iframe {
     max-width: 500px;
@@ -113,6 +113,8 @@ iframe {
     align-content: space-between;
     justify-content: center;
     background: linear-gradient(45deg,rgb(243, 243, 243) 40%,rgb(200, 200, 200));
+    padding: 0 20px;
+    box-shadow: 3px 3px 10px -3px rgba(0, 0, 0, 0.3);
 }
 .description_container p:first-child {
     font-size: 2rem;
@@ -126,7 +128,7 @@ iframe {
 /* -----------------------------slider --------------------------*/
 .slider_bunin {
     width: 100%;
-    background-color: beige;
+    background-color: rgba(255, 228, 196, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
