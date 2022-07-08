@@ -45,7 +45,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    border-bottom: 1px solid rgb(200, 200, 200);
 }
 .block_history_place {
     max-width: 250px;
@@ -55,6 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 .block_history_place a {
     font-family: sans-serif;

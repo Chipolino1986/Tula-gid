@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./kulikovo_pole.css">
     <link rel="stylesheet" href="../../style-css/landing/footer.css">
 
-    <script defer src="../../js/script.js"></script>
+    <script defer src="./kulick.js"></script>
     <script defer src="https://kit.fontawesome.com/9ca67525c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -136,69 +136,140 @@
                 <div class="img_pole">
                     <h5>Фото</h5>
                     <div class="img_pole_box">
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_1.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/KulikovoPole.jpg" width="100%" height="100%" alt="obelisk"></a>
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_2.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/10_vkhod-v-novyy-muzeynyy-kompleks.jpg" width="100%" height="100%" alt="enter"></a>
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_3.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/kulikovo-pole-1.jpeg" width="100%" height="100%" alt="pole-1"></a>
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_4.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/kulikovo_pole.jpg" width="100%" height="100%" alt="pole-2"></a>
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_5.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/pole-vue-in-the-sky.jpg" width="100%" height="100%" alt="pole-3"></a>
-                        <a href="file:///D:/VS_Code/My_Projects/Tula/history_places/kulikovo_pole/photo_6.html" class="img_pole-1"><img src="../../img/Kulikovo-pole/caption.jpg" width="100%" height="100%" alt="pole-4"></a>
+                        <img class="pole" id="open_pop_up" src="../../img/Kulikovo-pole/KulikovoPole.jpg" width="100%" height="100%" alt="obelisk">
+                        <img class="pole" id="open_pop_up1" src="../../img/Kulikovo-pole/10_vkhod-v-novyy-muzeynyy-kompleks.jpg" width="100%" height="100%" alt="enter">
+                        <img class="pole" id="open_pop_up2" src="../../img/Kulikovo-pole/kulikovo-pole-1.jpeg" width="100%" height="100%" alt="pole-1">
+                        <img class="pole" id="open_pop_up3" src="../../img/Kulikovo-pole/kulikovo_pole.jpg" width="100%" height="100%" alt="pole-2">
+                        <img class="pole" id="open_pop_up4" src="../../img/Kulikovo-pole/pole-vue-in-the-sky.jpg" width="100%" height="100%" alt="pole-3">
+                        <img class="pole" id="open_pop_up5" src="../../img/Kulikovo-pole/caption.jpg" width="100%" height="100%" alt="pole-4">
                     </div>
+
+                    <div class="pop_up" id="pop_up">
+                        <div class="pop_up_container">
+                            <div class="pop_up_body">
+                                
+                                <img src="../../img/Kulikovo-pole/KulikovoPole.jpg">
+    
+                                <div id="pop_up_close" class="pop_up_close">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop_up1" id="pop_up1">
+                        <div class="pop_up_container1">
+                            <div class="pop_up_body1">
+                                
+                                <img src="../../img/Kulikovo-pole/10_vkhod-v-novyy-muzeynyy-kompleks.jpg">
+    
+                                <div id="pop_up_close1" class="pop_up_close1">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop_up2" id="pop_up2">
+                        <div class="pop_up_container2">
+                            <div class="pop_up_body2">
+                                
+                                <img src="../../img/Kulikovo-pole/kulikovo-pole-1.jpeg">
+    
+                                <div id="pop_up_close2" class="pop_up_close2">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop_up3" id="pop_up3">
+                        <div class="pop_up_container3">
+                            <div class="pop_up_body3">
+                                
+                                <img src="../../img/Kulikovo-pole/kulikovo_pole.jpg">
+    
+                                <div id="pop_up_close3" class="pop_up_close3">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop_up4" id="pop_up4">
+                        <div class="pop_up_container4">
+                            <div class="pop_up_body4">
+                                
+                                <img src="../../img/Kulikovo-pole/pole-vue-in-the-sky.jpg">
+    
+                                <div id="pop_up_close4" class="pop_up_close4">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pop_up5" id="pop_up5">
+                        <div class="pop_up_container5">
+                            <div class="pop_up_body5">
+                                
+                                <img src="../../img/Kulikovo-pole/caption.jpg">
+    
+                                <div id="pop_up_close5" class="pop_up_close5">&#10006</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <nav class="navigation_wrapper">
-        <div class="navigation_container">
-            <div class="block-map">
-                <div style="position:relative;overflow:hidden;">
-                <a href="https://yandex.ru/maps/org/osobo_okhranyayemaya_prirodnaya_territoriya_kulikovo_pole/234865480426/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">особо охраняемая природная территория Куликово поле</a>
-                <a href="https://yandex.ru/maps/10832/tula-oblast/category/nature_preserve/62479044326/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Заповедник в Тульской области</a>
-                <iframe src="https://yandex.ru/map-widget/v1/-/CCUNuWBBXD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <section class="navigation_main_wrapper">
+        <nav class="navigation_wrapper">
+            <div class="navigation_container">
+                <div class="block-map">
+                    <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/org/osobo_okhranyayemaya_prirodnaya_territoriya_kulikovo_pole/234865480426/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">особо охраняемая природная территория Куликово поле</a>
+                    <a href="https://yandex.ru/maps/10832/tula-oblast/category/nature_preserve/62479044326/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Заповедник в Тульской области</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUNuWBBXD" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+                <div class="block-description">
+                    <h3>Как добраться:</h3>
+                    <p>Музей-заповедник «Куликово поле» находится на территории Куркинского и 
+                       Кимовского районов Тульской области и включает несколько музеев и мемориалов, 
+                       расположенных на значительном расстоянии друг от друга. 
+                    </p>
+                    <br>
+                    <h4>Адрес:</h4>
+                    <p>301949, Тульская область, Куркинский район, деревня Ивановка, 
+                       Хозяйственно-вспомогательная база музея.
+                    </p>
+                </div>
             </div>
-            <div class="block-description">
-                <h3>Как добраться:</h3>
-                <p>Музей-заповедник «Куликово поле» находится на территории Куркинского и 
-                   Кимовского районов Тульской области и включает несколько музеев и мемориалов, 
-                   расположенных на значительном расстоянии друг от друга. 
-                </p>
-                <br>
-                <h4>Адрес:</h4>
-                <p>301949, Тульская область, Куркинский район, деревня Ивановка, 
-                   Хозяйственно-вспомогательная база музея.
-                </p>
+        </nav>
+    </section>
+    
+    <section class="slider_main_wrapper">
+        <div class="slider_wrapper">
+            <div class="slider_buttons">
+                <button class="btn_prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
             </div>
-        </div>
-    </nav>
+            <div class="slider_container"> 
 
-    <div class="slider_wrapper">
-        <div class="slider_buttons">
-            <button class="btn_prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
-        </div>
-        <div class="slider_container"> 
-
-            <div class="slider_track">   
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
-                <div class="slider_item"></div>
+                <div class="slider_track">   
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                    <div class="slider_item"></div>
+                </div>
+            </div>
+            <div class="slider_buttons">
+                <button class="btn_next"><i class="fa-solid fa-circle-chevron-right"></i></button>
             </div>
         </div>
-        <div class="slider_buttons">
-            <button class="btn_next"><i class="fa-solid fa-circle-chevron-right"></i></button>
-        </div>
-    </div>
+    </section>
 
 <!---------------------------------------- footer ------------------------------------------------>
 

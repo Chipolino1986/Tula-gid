@@ -18,7 +18,6 @@
 }
 .conteiner {
     position: relative;
-    /* padding-bottom: 47.25%; */
     padding-bottom: 30.25%;
     margin: 0 auto;
     display: flex;
@@ -35,26 +34,10 @@
     max-height: 100%;
     overflow: hidden;
 }
-/* .container_content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 100;
-    max-width: 1000px;
-    width: 100%;
-    background-color: rgba(206, 206, 206, 0.438);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
 .container_content p {
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 0 3px black;
     font-family: sans-serif;
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
@@ -65,6 +48,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 h5 {
     text-align: center;
@@ -82,27 +66,29 @@ h5 {
     justify-content: space-between;
     align-items: center;
 }
-.img_pole-1 {
+.img_pole_box img {
     max-width: 300px;
     width: 100%;
-}
-.img_pole-1 img {
-    max-width: 300px;
-    width: 100%;
-    max-height: 180px;
+    min-height: 220px;
     height: 100%;
     border-radius: 4px;
     box-shadow: 4px 4px 10px -3px black;
     margin: 10px 0;
 }
 /* -----------------------------slider --------------------------*/
+.slider_main_wrapper {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
 .slider_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1300px;
     width: 100%;
-    margin: 30px auto;
 }
 .slider_container {
     width: 100%;
@@ -278,12 +264,16 @@ h5 {
     flex-wrap: wrap;
 }
 /*-------------------- navigation----------------- */
+.navigation_main_wrapper {
+    width: 100%;
+    background-color: beige;
+    padding: 40px 0 10px 0;
+}
 .navigation_wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
 }
 .navigation_container {
     max-width: 1200px;
@@ -295,7 +285,7 @@ h5 {
 .block-map {
     max-width: 600px;
     width: 100%;
-    min-height: 350px;
+    min-height: 300px;
     height: 100%;
     border: 1px solid rgb(190, 190, 190);
     border-radius: 6px;
@@ -304,7 +294,7 @@ h5 {
 .block-map iframe {
     max-width: 600px;
     width: 100%;
-    min-height: 350px;
+    min-height: 300px;
     height: 100%;
 }
 .block-description {
@@ -324,4 +314,82 @@ h5 {
 }
 .block-description p {
     font-family: sans-serif;
+}
+/* -----------------------------popup-------------------------------- */
+.pop_up, 
+.pop_up1, 
+.pop_up2, 
+.pop_up3, 
+.pop_up4, 
+.pop_up5 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-45.5%) scale(0);
+    transition: all .4s ease;
+}
+.pop_up.active, 
+.pop_up1.active, 
+.pop_up2.active, 
+.pop_up3.active, 
+.pop_up4.active, 
+.pop_up5.active {
+    transform: translateY(0%) scale(100%);
+    background-color: rgba(0, 0, 0, .7);
+}
+.pop_up_container, 
+.pop_up_container1, 
+.pop_up_container2, 
+.pop_up_container3, 
+.pop_up_container4, 
+.pop_up_container5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.pop_up_body, 
+.pop_up_body1, 
+.pop_up_body2, 
+.pop_up_body3, 
+.pop_up_body4, 
+.pop_up_body5 {
+    margin: auto;
+    width: 750px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    position: relative;
+}
+.pop_up_body img, 
+.pop_up_body1 img, 
+.pop_up_body2 img, 
+.pop_up_body3 img, 
+.pop_up_body4 img, 
+.pop_up_body5 img {
+    width: 100%;
+    height: 500px;
+}
+.pop_up_close, 
+.pop_up_close1, 
+.pop_up_close2, 
+.pop_up_close3, 
+.pop_up_close4, 
+.pop_up_close5 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.pole {
+    box-shadow: 3px 5px 15px -3px rgb(0, 0, 0);
+    border-radius: 6px;
+}
+.pole:hover {
+    cursor: pointer;
 }

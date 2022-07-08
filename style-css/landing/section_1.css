@@ -47,20 +47,21 @@
     margin-bottom: 35px;
 }
 .start_travel {
-    /* border: 1px solid white; */
     width: 200px;
     padding: 15px 15px;
-    color: white;
     transition: all .2s ease;
     background-color: rgb(255, 255, 255);
     color: black;
+    font-weight: 500;
     font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: .8rem;
     border-radius: 30px;
+    border: 1px solid transparent;
 }
 .start_travel:hover {
-    background-color: rgba(109, 187, 95, 0.826);
+    background-color: rgb(35, 94, 25,.8);
     color: rgb(255, 255, 255);
+    border: 1px solid white;
 }
