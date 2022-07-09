@@ -52,7 +52,7 @@ popUpContainers.forEach(container => {
     const popUpContainer = popUp.querySelector('.pop_up_container');
     const popUpClose = popUp.querySelector('.pop_up_close');
     const withoutContainer = popUp.dataset.withoutContainer;
-    const withoutCross = popUp.dataset.withoutCross;
+    const withoutCros = popUp.dataset.withoutCross;
 
     btnImgOpen.addEventListener('click', function(e) {
         e.preventDefault();
@@ -67,7 +67,7 @@ popUpContainers.forEach(container => {
             }
         })
     }
-    if(!withoutCross) {
+    if(!withoutCros) {
         popUpClose.addEventListener('click', function(e) {
             e.preventDefault();
             popUp.classList.remove('active');
