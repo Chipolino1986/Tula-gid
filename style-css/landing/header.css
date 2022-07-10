@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     padding: 30px 0;
+    /* border: 1px solid yellow; */
 }
 .content_header {
     max-width: 1200px;
@@ -16,6 +17,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid yellow; */
 }
 .logo {
     text-transform: uppercase;
@@ -25,23 +27,83 @@
     color: rgb(255, 255, 255);
     text-shadow: 3px 0 2px black;
 }
-.items {
-    max-width: 800px;
-    width: 100%;
+/* -------------------------------------------- */
+
+.dws-menu ul,
+.dws-menu ol {
+    list-style: none;
+}
+.dws-menu > ul {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    font-family: sans-serif;
-    text-transform: uppercase;
+    justify-content: center;
+}
+.dws-menu > ul li {
+    position: relative;
+}
+.dws-menu > ul li a {
+    display: block;
+    /* background-color: transparent; */
+    padding: 10px 20px 10px 10px;
     font-size: .8rem;
-    font-weight: 500;
-}
-.items a {
     color: rgb(255, 255, 255);
-    transition: all .2s ease;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    font-family: sans-serif;
 }
-.items a:hover {
-    color: rgb(178, 178, 178);
+.dws-menu li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: all .3s ease;
 }
+/* -------------выподающее меню------------ */
+.dws-menu li ul {
+    position: absolute;
+    min-height: 150px;
+    display: none;
+    background-color: rgba(255, 255, 255);
+}
+.dws-menu li > ul li {
+    width: 182px;
+}
+.dws-menu li > ul li a {
+    padding: 10px 15px;
+    text-transform: none;
+    font-size: .9rem;
+    color: black;
+    text-align: center;
+}
+.dws-menu li > ul li a:hover {
+    background-color: rgba(100, 100, 100);
+    color: white;
+}
+.dws-menu li > ul li ul {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.dws-menu li:hover > ul {
+    display: block;
+}
+
+/* ------------------------------------------------ */
+/* .fa-id-card {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+.fa-newspaper {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+.fa-gear {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+.fa-cart-shopping {
+    padding-right: 10px;
+    font-size: 1rem;
+}
+.fa-house {
+    padding-right: 10px;
+    font-size: 1rem;
+} */
